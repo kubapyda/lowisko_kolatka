@@ -1,3 +1,10 @@
+import Home from './home';
 import React from "react"
 
-export default () => <div>Hello world!</div>
+export default () => {
+    return (
+        <main className="main">
+            <Home></Home>
+        </main>
+    )
+}
