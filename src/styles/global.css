@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
     margin: 0;
     font-family: 'Calibri';
@@ -5,56 +7,18 @@ body {
 }
 
 .main {
-    background-color: #ddd;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.regulations {
-    width: 750px;
-    height: 850px;
-    background: #90ee90;
-    opacity: .75;
-    display: inline-block;
-    position: absolute;
-    transform: rotate(55deg);
-    left: 75%;
-}
-
-.regulations::before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 250px;
-    position: absolute;
-    left: 300px;
-    top: 300px;
-    background: white;
-    z-index: 1;
-}
-
-.regulations::after {
-    content: "";
-    display: block;
-    width: 450px;
-    height: 550px;
-    position: absolute;
-    left: 150px;
-    top: 150px;
-    background: #ffff94;
-}
-
-.navigation {
     background-image: url('../assets/bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed, scroll;
     background-size: cover;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 64px;
 }
 
-.navigation::before {
+.main.home::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -62,11 +26,18 @@ body {
     background: rgba(255, 255, 255, 0.25);
 }
 
+.main .regulations {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
 .title {
     font-size: 96px;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     position: absolute;
+    color: #fff;
     top: 50%;
     left: 50%;
     width: 320px;
@@ -81,7 +52,9 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navigation-tabs li {
@@ -91,10 +64,25 @@ body {
     font-weight: 600;
 }
 
-.navigation-tabs li.active {
+.navigation-tabs li a.active {
     color: #fff;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
     background: #90ee90;
     border-radius: 3px;
+    padding: 10px;
+}
+.navigation-tabs li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 6px;
 }
 
