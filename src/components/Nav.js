@@ -1,11 +1,59 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
 import { Link } from "gatsby";
+import { slide as Menu } from "react-burger-menu";
 import React from "react";
+
+var styles = {
+    bmBurgerButton: {
+      position: 'fixed',
+      width: '36px',
+      height: '30px',
+      right: '36px',
+      top: '16px'
+    },
+    bmBurgerBars: {
+      background: '#000'
+    },
+    bmBurgerBarsHover: {
+      background: '#a90000'
+    },
+    bmCrossButton: {
+      height: '24px',
+      width: '24px'
+    },
+    bmCross: {
+      background: '#bdc3c7'
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%',
+      top: '0'
+    },
+    bmMenu: {
+      background: '#eee',
+      boxShadow: '-1px 0px 8px 0px rgba(0,0,0,0.75)',
+      padding: '2.5em 1.5em 0',
+      fontSize: '1.15em'
+    },
+    bmMorphShape: {
+      fill: '#373a47'
+    },
+    bmItemList: {
+      color: '#b8b7ad',
+      padding: '0.8em'
+    },
+    bmItem: {
+      display: 'inline-block',
+      width: '100%',
+      padding: '10px'
+    },
+    bmOverlay: {
+      background: 'rgba(0, 0, 0, 0.3)'
+    }
+};
 
 export default () => {
     return (
-        <nav>
+        <nav className="nav-navigation">
             <ul className="navigation-tabs">
                 <li>
                     <Link to="/" activeClassName="active">Strona główna</Link>
@@ -24,6 +72,16 @@ export default () => {
                 </li>
                 <li>
                     <Link to="/price-list" activeClassName="active">Cennik</Link>
+                </li>
+                <li className="hamburger">
+                    <Menu right styles={ styles }>
+                        <Link to="/" activeClassName="active">Strona główna</Link>
+                        <Link to="/news" activeClassName="active">Aktualności</Link>
+                        <Link to="/regulations" activeClassName="active">Regulamin</Link>
+                        <Link to="/map-and-contact" activeClassName="active">Mapa i kontakt</Link>
+                        <Link to="/gallery" activeClassName="active">Galeria</Link>
+                        <Link to="/price-list" activeClassName="active">Cennik</Link>
+                    </Menu>
                 </li>
                 {/* <li>Rodzaje ryb</li> */}
             </ul>
