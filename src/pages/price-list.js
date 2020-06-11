@@ -2,68 +2,20 @@ import Footer from '../components/Footer';
 import Nav from "../components/Nav";
 import React from "react";
 
-const priceList = [{
-    price: '20zł',
-    by: 'Dzień',
-    time: '6:00-21:00',
-    description: 'Wędkowanie na 2 wędki'
-}, {
-    price: '5zł',
-    by: 'Osoba towarzysząca',
-    time: '6:00-21:00',
-    description: ''
-}, {
-    price: '30zł',
-    by: 'Noc',
-    time: '18:00-6:00',
-    description: 'Wędkowanie na 2 wędki'
-}, {
-    price: '10ł',
-    by: 'Osoba towarzysząca',
-    time: '18:00-6:00',
-    description: ''
-}, {
-    price: '40zł',
-    by: 'Doba',
-    time: '6:00-6:00',
-    description: 'Wędkowanie na 2 wędki'
-}, {
-    price: '10zł',
-    by: 'Doba',
-    time: '',
-    description: 'Rozbicie namiotu'
-}, {
-    price: '10zł',
-    by: '',
-    time: '',
-    description: 'Każda dodatkowa wędka'
-}];
+import priceListData from "../data/cennik.json";
 
-const fishes = [{
-    price: '16zł',
-    name: 'Karp',
-    notPaidFish: 'Płoć'
-}, {
-    price: '16zł',
-    name: 'Amur',
-    notPaidFish: 'Wzdręga'
-}, {
-    price: '18zł',
-    name: 'Lin',
-    notPaidFish: 'Okoń'
-}, {
-    price: '10zł',
-    name: 'Karaś',
-    notPaidFish: ''
-}, {
-    price: '18zł',
-    name: 'Szczupak',
-    notPaidFish: ''
-}, {
-    price: '80zł',
-    name: 'Węgorz',
-    notPaidFish: ''
-}];
+const priceList = priceListData.lista_cen.map(({cena, za, czas, opis}) => ({
+    price: cena,
+    by: za,
+    time: czas,
+    description: opis
+}));
+
+const fishes = priceListData.ryby.map(({cena, nazwa, nie_placimy}) => ({
+    price: cena,
+    name: nazwa,
+    notPaidFish: nie_placimy
+}));
 
 export default () => {
     return (
