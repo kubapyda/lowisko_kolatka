@@ -1,7 +1,12 @@
 {
     "aktualnosci": [
         {
-            "data_dodania": "28-05-201",
+            "data_dodania": "11-06-2020",
+            "tytul": "Nowy!",
+            "tresc": "Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor"
+        },
+        {
+            "data_dodania": "28-05-2019",
             "tytul": "Otwarcie sezonu!",
             "tresc": "Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor"
         },

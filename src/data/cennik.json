@@ -1,6 +1,6 @@
 {
     "lista_cen": [{
-        "cena": "20zł",
+        "cena": "25zł",
         "za": "Dzień",
         "czas": "6:00-21:00",
         "opis": "Wędkowanie na 2 wędki"
@@ -35,6 +35,9 @@
         "czas": "",
         "opis": "Każda dodatkowa wędka"
     }],
+
+
+
     "ryby": [{
         "cena": "16zł",
         "nazwa": "Karp",
