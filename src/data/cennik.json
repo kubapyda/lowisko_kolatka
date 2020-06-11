@@ -10,17 +10,17 @@
         "czas": "6:00-21:00",
         "opis": ""
     }, {
-        "cena": "30zł",
+        "cena": "40zł",
         "za": "Noc",
         "czas": "18:00-6:00",
         "opis": "Wędkowanie na 2 wędki"
     }, {
-        "cena": "10ł",
+        "cena": "10zł",
         "za": "Osoba towarzysząca",
         "czas": "18:00-6:00",
         "opis": ""
     }, {
-        "cena": "40zł",
+        "cena": "50zł",
         "za": "Doba",
         "czas": "6:00-6:00",
         "opis": "Wędkowanie na 2 wędki"
@@ -39,15 +39,15 @@
 
 
     "ryby": [{
-        "cena": "16zł",
+        "cena": "18zł",
         "nazwa": "Karp",
         "nie_placimy": "Płoć"
     }, {
-        "cena": "16zł",
+        "cena": "18zł",
         "nazwa": "Amur",
         "nie_placimy": "Wzdręga"
     }, {
-        "cena": "18zł",
+        "cena": "20zł",
         "nazwa": "Lin",
         "nie_placimy": "Okoń"
     }, {
@@ -55,11 +55,11 @@
         "nazwa": "Karaś",
         "nie_placimy": ""
     }, {
-        "cena": "18zł",
+        "cena": "20zł",
         "nazwa": "Szczupak",
         "nie_placimy": ""
     }, {
-        "cena": "80zł",
+        "cena": "100zł",
         "nazwa": "Węgorz",
         "nie_placimy": ""
     }]
