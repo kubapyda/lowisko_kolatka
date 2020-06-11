@@ -1,0 +1,24 @@
+{
+    "galeria": [
+        {
+          "zdjecie": "https://i.ibb.co/mJNFLdn/1.jpg",
+          "miniaturka": "https://i.ibb.co/HpJ9nst/1.jpg"
+        },
+        {
+          "origizdjecienal": "https://i.ibb.co/TWfDnV1/2.jpg",
+          "miniaturka": "https://i.ibb.co/Dt9XjrV/2.jpg"
+        },
+        {
+          "zdjecie": "https://i.ibb.co/Pw1Qd6b/3.jpg",
+          "miniaturka": "https://i.ibb.co/sJCx12G/3.jpg"
+        },
+        {
+          "zdjecie": "https://i.ibb.co/n1L6xBH/4.jpg",
+          "miniaturka": "https://i.ibb.co/7Vq3TP2/4.jpg"
+        },
+        {
+          "zdjecie": "https://i.ibb.co/hWGS6Q5/5.jpg",
+          "miniaturka": "https://i.ibb.co/301rjsL/5.jpg"
+        }
+    ]
+}
